@@ -1,4 +1,2 @@
-# advent-2023
-solutions to advent 2023
-
-test
+# advent-2024
+solutions to advent 2024
