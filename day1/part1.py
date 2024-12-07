@@ -13,17 +13,16 @@ class Solution(object):
         lines = f.read().splitlines()
         f.close()
 
-        integers = [str(i) for i in range(10)]
+        nums = [l.split('   ') for l in lines]
+        nums = [[int(num) for num in line] for line in nums]
 
-        lines = [[l for l in line if l in integers] for line in lines]
+        left = sorted([num[0] for num in nums])
+        right = sorted([num[1] for num in nums])
 
         theSum = 0
 
-        for line in lines:
-            first = line[0]
-            last = line[-1]
-            num = int(first+last)
-            theSum += num
+        for x, y in zip(left, right):
+            theSum += abs(x-y)
 
         return theSum
 
