@@ -46,36 +46,6 @@ class Solution(object):
         
         return total_sum
 
-
-        # def is_valid(equation):
-        #     result = equation[0]
-        #     eq = equation[1:]
-        #     operators = ['+', '*']
-
-        #     start = eq[0]
-
-        #     # for i, e in enumerate(eq[1:]):
-        #     #     for op in operators:
-        #     #         if op == '+':
-        #     #             start = start + e
-        #     #         if op == '*':
-        #     #             start = start * e
-        #     #         print(op, e, start)
-
-        #     for i in range(len(eq[1:]) + 1)[1:]:
-        #         for e in eq[1:]:
-        #             for op in operators:
-        #                 print(op, e)
-
-        #     print()
-        #     return True
-
-        # for r in lines:
-        #     if is_valid(r):
-        #         total += 1
-
-        return total
-
 def main():
     s = Solution()
     print(s.solution(s.args))

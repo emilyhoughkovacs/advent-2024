@@ -78,8 +78,6 @@ class Solution(object):
         #     if is_valid(r):
         #         total += 1
 
-        return total
-
 def main():
     s = Solution()
     print(s.solution(s.args))
